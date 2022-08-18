@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="rpgui.min.css" rel="stylesheet" type="text/css" />
+    <script src="rpgui.min.js"></script>
+    <title>Document</title>
+    <style>
+      body {
+        background: #aaf;
+      }
+    </style>
+  </head>
+  <body>
+    <style>
+      .rpgui-container {
+        height: 540px;
+        width: 280px;
+      }
+ 
+      
+
+    </style>
+    <div class="rpgui-content">
+      <!-- simple inputs -->
+      <div class="rpgui-container framed rpgui-draggable nestor-ui">
+       <style>
+
+       .nestor-ui{
+        z-index: 1001;
+    position: absolute;
+    left: 621px;
+    top: 74px;
+       }
+
+            @media only screen and (max-width: 600px) {
+             .nestor-ui{
+           position: absolute;
+           left: 18%;
+           bottom: 28%;
+            }
+            }  
+            #test-11{
+              font-size: .81rem;
+             }
+
+         /*     .sword{width: 31px;
+    height: 31px;
+             } */
+           /*   .label{
+              line-height: 32px;
+             } */
+       </style>
+        <h1  id="test-11">Choose a class!</h1>
+        <hr />
+
+
+        <label>Select class:  <div class="rpgui-icon shield"></div>      <div class="rpgui-icon exclamation"></div>    <div class="rpgui-icon sword"></div>
+</label>
+        <select class="rpgui-dropdown">
+          <option value="Warrior" selected>Warrior</option>
+          <option value="Mage">Mage</option>
+          <option value="Rogue">Rogue</option>
+          <option value="Ranger">Ranger</option>
+        </select>
+        <br>
+        <label>Select race:</label>
+        <select class="rpgui-dropdown">
+          <option value="Human" selected>Human</option>
+          <option value="Orc">Orc</option>
+          <option value="Elf">Elf</option>
+          <option value="Dwarf">Dwarf</option>
+        </select>
+        <br>
+
+        <hr class="golden" />
+
+              <label>Profession:</label>
+        <select class="rpgui-list" id="background-select" size="4">
+          <option value="Blacksmith">Blacksmith</option>
+          <option value="Merchant">Merchant</option>
+          <option value="City Guard">City Guard</option>
+          <option value="Alchemist">Alchemist</option>
+          <option value="Explorer">Explorer</option>
+          <option value="Thug">Thug</option>
+          <option value="Mercenary">Mercenary</option>
+          <option value="Royalty">Royalty</option>
+          <option value="Gladiator">Gladiator</option>
+        </select>
+
+
+       
+      </div>
+
+                  <button class="rpgui-button nestor-button-1" type="button" ><p>
+                  <a href="/page2.html">Next</a> 
+                  </p></button>
+    <button class="rpgui-button nestor-button-2" type="button"
+                   onclick="window.location.href='/index.html';" value="w3docs"
+                  
+                  
+                  ><p>Back</p></button>                 
+
+                  <style>
+                   
+                    .rpgui-content a {
+                    color: #fff;
+                   }
+                   .rpgui-content a:hover{
+                    text-decoration: none;
+                   }
+
+                   .nestor-button-1{
+                    position: absolute;
+                    bottom: 10%;
+                    left: 65%;
+                   }
+                       .nestor-button-2{
+                    position: absolute;
+                    bottom: 10%;
+                    right: 65%;
+                   }
+                  </style>
+
+      <!-- Buttons, radio and checkbox -->
+      <!-- <div class="rpgui-container framed rpgui-draggable" style="left: 280px">
+        <h1>Buttons</h1>
+        <hr />
+
+        <button class="rpgui-button" type="button" style="width: 100%">
+          <p>Button</p>
+        </button>
+        <br /><br />
+        <button class="rpgui-button golden" type="button" style="width: 100%">
+          <p>Gold Button</p>
+        </button>
+        <br /><br />
+
+        <h1>Radio/Check</h1>
+        <hr />
+
+        <hr />
+        <input class="rpgui-checkbox" type="checkbox" checked /><label
+          >Checkbox 1.</label
+        >
+        <input class="rpgui-checkbox" type="checkbox" /><label
+          >Checkbox 2.</label
+        >
+      </div>
+ -->
+      <!-- Dropdown and list -->
+     <!--  <div class="rpgui-container framed rpgui-draggable" style="left: 560px">
+        <h1>Drop & List</h1>
+        <hr />
+
+        <p>RPGUI dropdown</p>
+        <label>Select class:</label>
+        <select class="rpgui-dropdown">
+          <option value="Warrior" selected>Warrior</option>
+          <option value="Mage">Mage</option>
+          <option value="Rogue">Rogue</option>
+          <option value="Ranger">Ranger</option>
+        </select>
+        <hr />
+
+        <p>RPGUI list:</p>
+        <label>Profession:</label>
+        <select class="rpgui-list" id="background-select" size="4">
+          <option value="Blacksmith">Blacksmith</option>
+          <option value="Merchant">Merchant</option>
+          <option value="City Guard">City Guard</option>
+          <option value="Alchemist">Alchemist</option>
+          <option value="Explorer">Explorer</option>
+          <option value="Thug">Thug</option>
+          <option value="Mercenary">Mercenary</option>
+          <option value="Royalty">Royalty</option>
+          <option value="Gladiator">Gladiator</option>
+        </select>
+
+        <div
+          class="rpgui-container framed-grey"
+          style="width: 100%; height: 90px; left: 0px; top: 0px"
+        >
+          <label>Here's a grey frame.</label>
+        </div>
+      </div>
+ -->
+      <!-- Icons -->
+      <!-- <div class="rpgui-container framed rpgui-draggable" style="left: 840px">
+        <h1>Icons</h1>
+        <hr />
+
+        <div class="rpgui-icon sword"></div>
+        <div class="rpgui-icon shield"></div>
+        <div class="rpgui-icon exclamation"></div>
+        <br /><br />
+
+        <div class="rpgui-icon potion-red"></div>
+        <div class="rpgui-icon potion-green"></div>
+        <div class="rpgui-icon potion-blue"></div>
+        <br /><br />
+
+        <div class="rpgui-icon weapon-slot"></div>
+        <div class="rpgui-icon shield-slot"></div>
+        <div class="rpgui-icon armor-slot"></div>
+        <br /><br />
+
+        <div class="rpgui-icon helmet-slot"></div>
+        <div class="rpgui-icon ring-slot"></div>
+        <div class="rpgui-icon potion-slot"></div>
+        <br /><br />
+
+        <div class="rpgui-icon magic-slot"></div>
+        <div class="rpgui-icon shoes-slot"></div>
+        <div class="rpgui-icon empty-slot"></div>
+        <br /><br /> -->
+      </div>
+    </div>
+  </body>
+</html>
