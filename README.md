@@ -1,4 +1,4 @@
-# UI Game --Dev
+# UI Game --Dev and RPG with Unity
 #Play the game directly at this hosted website:
 # https://nestorjgc.itch.io/terin
 <h2>UI RPG styled </h2>
